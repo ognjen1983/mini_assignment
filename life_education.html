@@ -1,9 +1,36 @@
 <html>
 
 <head>
+<style>
+* {
+    box-sizing: border-box;
+  }
+  
+  /* Create two equal columns that floats next to each other */
+  .navigation_column {
+    float: left;
+    width: 20%;
+    padding: 10px;
+    height: 300px; /* Should be removed. Only for demonstration */
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  p {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 16;
+  margin-right: 24;
+}
+  </style>
 </head>
 
 <body>
+    <div class="navigation_column">
     <ul>
         <li><a href="index.html">Main page</a>
         </li>
@@ -14,7 +41,7 @@
         <li><a href="pupin_coils.html">Pupin coils</a>
         </li>
     </ul>
-    <hr>
+</div>
     <h1>Early life and education</h1>
     <h2>Early life</h2>
     <p>

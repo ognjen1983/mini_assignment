@@ -1,10 +1,39 @@
 <html>
 
 <head>
+<style>
+* {
+    box-sizing: border-box;
+  }
+  
+  /* Create two equal columns that floats next to each other */
+  .navigation_column {
+    float: left;
+    width: 20%;
+    padding: 10px;
+    height: 300px; /* Should be removed. Only for demonstration */
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  p {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 16;
+  margin-right: 24;
+}
+  </style>
 </head>
 
 <body>
-    <ul>
+
+<div class="row">
+    <div class="navigation_column">
+      <ul>
         <li><a href="index.html">Main page</a>
         </li>
         <li><a href="life_education.html">Early life and education</a>
@@ -13,11 +42,12 @@
         </li>
         <li><a href="pupin_coils.html">Pupin coils</a>
         </li>
-    </ul>
-    <hr>
-    <h1>Pupin coils</h1>
-    <img src="pupin-1916.jpg" alt="Mihajlo">
-    <p>
+      </ul>
+    </div>
+      <div class="columns">
+        <img src="pupin-1916.jpg" alt="Mihajlo">
+      </div>
+      <p>
         Pupin's 1899 patent for loading coils, archaically called "Pupin coils", followed closely on the pioneering work
         of the English physicist and mathematician Oliver Heaviside, which predates Pupin's patent by some seven years.
         The importance of the patent was made clear when the American rights to it were acquired by American Telephone &
@@ -26,8 +56,9 @@
         with Campbell's own patent. AT&T were afraid they would lose control of an invention which was immensely
         valuable due to its ability to greatly extend the range of long distance telephones and especially submarine
         ones.
-    </p>
-
+      </p>
+  </div>
+  
 </body>
 
 </html>
